@@ -1,7 +1,7 @@
 # Loan Request Service
 
 ## overview
-Lendico we have customers who can apply for  one or more loans. This Microservice handles the requests and processes accordingly based on the request from customer.
+we have customers who can apply for  one or more loans. This Microservice handles the requests and processes accordingly based on the request from customer.
 
 ## Use case
 * A customer can request loan amount   between 500 and 12000.50.

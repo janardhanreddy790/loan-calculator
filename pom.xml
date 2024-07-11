@@ -8,16 +8,16 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ing.lendico.api</groupId>
+    <groupId>com.nagam.examples.loan.calculator</groupId>
     <artifactId>LoanCalculator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>LoanCalculator</name>
-    <description>Lendico we have customers who can apply for one or more loans. This Microservice handles the requests
+    <description>we have customers who can apply for one or more loans. This Microservice handles the requests
         and processes accordingly based on the request from customer.
     </description>
     <packaging>jar</packaging>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -54,35 +54,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>spring-boot</classifier>
-                            <mainClass>
-                                com.ing.lendico.api.LoanCalculatorApplication
-                            </mainClass>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
